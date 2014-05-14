@@ -7,10 +7,10 @@ CMS designed for a client
 FEATURES
 ========
 Client section 
-- add, create, delete client. 
+- add, create, Update and delete client. 
 
 User Section 
-- add, create, delete client. Includes admin and user roles. 
+- add, create, Update and delete User. Includes admin and user roles. 
 
 Image upload with conections to projects, clients, experiments and API. Includes update. 
 
