@@ -1,0 +1,64 @@
+<form>
+    <input type="hidden" name="method" value="addNewExperiment"/>
+
+    <div class="modal-header">
+        <a class="close" data-dismiss="modal">&times;</a>
+
+        <h3>Add New Experiment</h3>
+    </div>
+    <div class="modal-body" style="width:660px;">
+        <div class="row-fluid">
+            <div class="span12">
+                <div class="span8">
+                    <h5>Experiment Details</h5>
+                    <table>
+                        <tr>
+                            <td>
+                                <label>Select Page: </label>
+                            </td>
+                            <td>
+                                <select name="page">
+                                    <option value="home">Home Page</option>
+                                    <option value="home">Product Details Page</option>
+                                    <option value="home">Category Page</option>
+                                    <option value="home">Add new Page</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label>FunEx Number:</label></td>
+                            <td><input type="text" name="funex_no" value=""/></td>
+                        </tr>
+                        <tr>
+                            <td><label>Number of Variations:</label></td>
+                            <td><input type="text" name="variations_count" value=""/></td>
+                        </tr>
+                        <tr>
+                            <td><label>Traffic Volume:</label></td>
+                            <td><input type="text" name="traffic_volume" value=""/></td>
+                        </tr>
+                        <tr>
+                            <td><label>Targetting:</label></td>
+                            <td><input type="text" name="targetting" value=""/></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="span4">
+                    <div>
+                        <label>Conversion Objective:</label>
+                        <textarea rows="6" cols="40" name="conversion_obj"></textarea>
+                    </div>
+                    <div>
+                        <label>Description</label>
+                        <textarea rows="6" cols="40" name="description"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <input class="btn btn-primary" type="button" onclick="wf.addNewExperiment(this);" value="Save Changes"/>
+        <button class="btn btn-default" type="button"><a href="#">Back</a></button>
+        <!--<a class="btn" data-dismiss="modal">Close</a>-->
+    </div>
+</form>
